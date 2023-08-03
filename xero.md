@@ -6,7 +6,7 @@
 
 ---
 
-## Sync
+## Xero Sync
 *POST **/v2/xero/sync***
 
 #### Parameters
