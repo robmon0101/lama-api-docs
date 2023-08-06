@@ -14,8 +14,8 @@
     * Valid values are:
         * employee
         * timesheet
-        * client - Ongoing development
-        * invoice - Ongoing development
+        * client
+        * invoice
 
 #### Sample Request
 ```bash
