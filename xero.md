@@ -1,11 +1,10 @@
 # LAMA API DOCUMENTATION
 
 ## Navigate
-# [Xero APIs](xero.md)
-# [Clients APIs](client.md)
+# [Xero](xero.md)
+# [Clients](client.md)
 
 ---
-
 ## Xero Sync
 *POST **/v2/xero/sync***
 
@@ -49,3 +48,30 @@ curl --location --request POST 'https://<site>/v2/xero/sync' \
     'message': '<error message>'
 }
 ```
+
+---
+## Payroll Calendars
+*GET **/v2/xero/payroll-calendars***
+
+#### Sample Request
+```bash
+curl --location --request GET 'https://<site>/v2/xero/payroll-calendars' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <token>'
+```
+
+#### Response - Success
+```json
+{
+    'data': <list of payroll calendar object>,
+    'errors': null,
+    'status_code': 200
+}
+```
+
+---
+## Payroll Calendar Object
+* **id** - int
+    * Unique ID
+* **name** - string
+    * Name
